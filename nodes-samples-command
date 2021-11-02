@@ -1,0 +1,8 @@
+Nodes
+$ kubectl get nodes
+$ kubectl get nodes -o wide
+$ kubectl describe nodes
+$ kubectl get nodes - o yaml
+$ kubectl get node --selector=[label_name]
+$ kubectl get nodes -o jsonpath='{.items[*].status.addresses[?(@.type=="ExternalIP")].address}'
+$ kubectl top node [node_name]
